@@ -1,0 +1,161 @@
+/*Order: @import, :root, *, Elements, Classes, IDs, Attributes, Selectors, Nesting Selectors, Pseudo-Elements, Pseudo-Classes, At-Rules*/
+/*Order: Position, Size, Shape, Color, Function*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700");
+
+* {
+	margin: 0vw;
+	padding: 0vw;
+	border: 0vw;
+	color: #05a;
+	font-size: 1.25vw;
+	font-family: "Inter", sans-serif;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+header {
+	padding: 2vw 14vw;
+	display: flex;
+	justify-content: space-between;
+	background: #bee;
+
+	& span {
+		font-size: 3vw;
+		font-family: "Lora", serif;
+		font-weight: 700;
+	}
+}
+
+nav {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+
+	& a {
+		margin-left: 2vw;
+		padding: 1vw;
+		border-radius: 1vw;
+		transition: 1s;
+
+		&:hover {
+			background: #fff5;
+			box-shadow: 1px 1px 100px;
+		}
+	}
+}
+
+main {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+article {
+	padding: 2vw 14vw;
+	display: flex;
+	justify-content: space-between;
+
+	& > section:last-child, & > a:last-child {
+		margin-left: 2vw;
+		align-items: end;
+		text-align: end;
+	}
+
+	&:nth-child(3n) {
+		background: #bee;
+
+		& .icon {
+				background: linear-gradient(#fff,#05a);
+		}
+	}
+
+	&:nth-child(even) {
+		background: #05a;
+
+		& * {
+			color: #fff;
+		}
+
+		& .icon {
+				background: linear-gradient(#bee,#fff);
+		}
+	}
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+}
+
+video {
+	max-width: 40vw;
+	border-radius: 2vw;
+	transition: 1s;
+
+	&:hover {
+		box-shadow: 0px 0px 100px;
+	}
+}
+
+footer {
+	padding: 2vw 14vw;
+	display: flex;
+	justify-content: space-between;
+	background: #05a;
+
+	& span {
+		font-size: 2vw;
+		font-family: "Lora", serif;
+		font-weight: 700;
+		color: #fff;
+	}
+
+	& a {
+		margin-left: 2vw;
+		padding: 1vw;
+		border-radius: 1vw;
+		color: #fff;
+		background: #fff3;
+		transition: 1s;
+
+		&:hover {
+			box-shadow: 1px 1px 100px;
+		}
+	}
+}
+
+h1 {
+	font-size: 2.5vw;
+	font-family: "Lora", serif;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 2vw;
+}
+
+p {
+	font-weight: 300;
+}
+
+.icon {
+	margin-bottom: 2vw;
+	padding: 1vw;
+	width: fit-content;
+	aspect-ratio: 1;
+	border-radius: 1vw;
+	display: flex;
+	align-items: center;
+	background: linear-gradient(#bee,#05a);
+	transition: 1s;
+
+	& img {
+		width: 3vw;
+	}
+}
+
+.selected {
+	background: #fff;
+}
