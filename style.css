@@ -16,7 +16,7 @@
 }
 
 header {
-	padding: 2vw 14vw;
+	padding: 2vw 14vw 0vw 14vw;
 	display: flex;
 	justify-content: space-between;
 	background: #bee;
@@ -36,7 +36,7 @@ nav {
 	& a {
 		margin-left: 2vw;
 		padding: 1vw;
-		border-radius: 1vw;
+		border-radius: 0.5vw;
 		transition: 1s;
 
 		&:hover {
@@ -91,7 +91,7 @@ section {
 
 video {
 	max-width: 40vw;
-	border-radius: 2vw;
+	border-radius: 0.5vw;
 	transition: 1s;
 
 	&:hover {
@@ -115,7 +115,7 @@ footer {
 	& a {
 		margin-left: 2vw;
 		padding: 1vw;
-		border-radius: 1vw;
+		border-radius: 0.5vw;
 		color: #fff;
 		background: #fff3;
 		transition: 1s;
@@ -145,7 +145,7 @@ p {
 	padding: 1vw;
 	width: fit-content;
 	aspect-ratio: 1;
-	border-radius: 1vw;
+	border-radius: 0.5vw;
 	display: flex;
 	align-items: center;
 	background: linear-gradient(#bee,#05a);
