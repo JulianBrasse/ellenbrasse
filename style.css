@@ -1,0 +1,49 @@
+/*Order: @import, :root, *, Elements, Classes, IDs, Selectors, Pseudo-Elements, Pseudo-Classes, Attributes, At-Rules*/
+/*Order: Position, Size, Shape, Color, Function*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700");
+
+* {
+	margin: 0vw;
+	padding: 0vw;
+	border: 0vw;
+	color: #05a;
+	font-size: 1.25vw;
+	font-family: "Inter", sans-serif;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+header {
+	padding: 2vw 14vw 0vw 14vw;
+	display: flex;
+	justify-content: space-between;
+	
+	& span {
+		font-size: 3vw;
+		font-family: "Lora", serif;
+		font-weight: 700;
+	}
+}
+
+nav {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	
+	& a {
+		margin-left: 2vw;
+		transition: 1s;
+		
+		&:hover {
+			font-weight: 700;
+		}
+	}
+}
+
+main {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
